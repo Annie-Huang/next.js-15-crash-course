@@ -1,6 +1,3 @@
-import { resolve } from 'path';
-import React from 'react';
-
 type User = {
   id: number;
   name: string;

@@ -50,3 +50,4 @@ http://localhost:3000/products/1
 - Programmatically navigate to certain path (router.push from 'next/navigation').
 
 http://localhost:3000/users-client
+http://localhost:3000/users-server  <--- see the same set of users in user-client

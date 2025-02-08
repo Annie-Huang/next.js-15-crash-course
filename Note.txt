@@ -1,5 +1,8 @@
 Learn Next.js 15 in 1 hour - Beginner Tutorial (https://www.youtube.com/watch?v=_EgI9WH8q1A)
 
+https://github.com/gopinav/Next.js-15-Crash-Course/tree/main/nextjs-demo
+https://github.com/Annie-Huang/Next.js-15-Crash-Course
+
 -------------------------------------------------------------------------------------------
 
 PS C:\react> npx create-next-app@latest

@@ -40,3 +40,7 @@ This leads to improved performance and a smoother user experience.
 It also help to reduce code duplication and improve the overall structure of your project
 
 http://localhost:3000/products/1
+
+- Create next <Link>
+- Check active path
+- Programmatically navigate to certain path (router.push from 'next/navigation').

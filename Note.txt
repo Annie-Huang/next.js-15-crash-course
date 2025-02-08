@@ -48,3 +48,5 @@ http://localhost:3000/products/1
 - Create next <Link>
 - Check active path
 - Programmatically navigate to certain path (router.push from 'next/navigation').
+
+http://localhost:3000/users-client

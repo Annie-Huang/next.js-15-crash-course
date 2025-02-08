@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useState } from 'react';
 
 type User = {
@@ -8,7 +10,7 @@ type User = {
   phone: string;
 };
 
-export const UsersClient = () => {
+const UsersClient = () => {
   const [users, setUsers] = useState<User[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
@@ -51,3 +53,5 @@ export const UsersClient = () => {
     </ul>
   );
 };
+
+export default UsersClient;

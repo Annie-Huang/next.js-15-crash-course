@@ -1,3 +1,4 @@
+import { resolve } from 'path';
 import React from 'react';
 
 type User = {
@@ -9,6 +10,12 @@ type User = {
 };
 
 const UsersServer = async () => {
+  // Test loading.tsx
+  await new Promise((resolve) => setTimeout(resolve, 2000));
+
+  // Test error.tsx
+  // const response = await fetch('https://jsonplaceholder.typicode.com/users123');
+
   const response = await fetch('https://jsonplaceholder.typicode.com/users');
   const users = await response.json();
 

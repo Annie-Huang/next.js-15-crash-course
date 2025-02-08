@@ -27,3 +27,4 @@ git push -u origin main
 
 http://localhost:3000/about
 http://localhost:3000/blog/first-post
+http://localhost:3000/products/iphone

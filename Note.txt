@@ -5,6 +5,9 @@ https://github.com/Annie-Huang/next.js-15-crash-course
 
 -------------------------------------------------------------------------------------------
 
+Note: use vscode to code this as the backend part required to use vscode plugin: Thunder Client
+
+
 PS C:\react> npx create-next-app@latest
 √ What is your project named? ... next.js-15-crash-course
 √ Would you like to use TypeScript? ... No / Yes

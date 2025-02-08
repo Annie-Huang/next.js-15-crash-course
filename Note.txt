@@ -38,3 +38,5 @@ http://localhost:3000/products/iphone   <--- additional layout on top the the ro
 When navigating between pages that share a layout, only the page components update - the layout doesn't re-render.
 This leads to improved performance and a smoother user experience.
 It also help to reduce code duplication and improve the overall structure of your project
+
+http://localhost:3000/products/1

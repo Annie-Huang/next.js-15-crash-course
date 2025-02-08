@@ -51,3 +51,7 @@ http://localhost:3000/products/1
 
 http://localhost:3000/users-client
 http://localhost:3000/users-server  <--- see the same set of users in user-client
+
+server loading file as to be called 'loading.tsx'
+server error file has to be called 'error.tsx'
+next.js will automatically use these two files while loading the page.tsx in the same directory

@@ -4,8 +4,8 @@ https://github.com/gopinav/Next.js-15-Crash-Course/tree/main/nextjs-demo
 https://github.com/Annie-Huang/next.js-15-crash-course
 
 https://jsonplaceholder.typicode.com/users
-https://mockapi.io/
-https://clerk.com/
+https://mockapi.io/     <-- sign in with google
+https://clerk.com/      <-- sign in with google
 -------------------------------------------------------------------------------------------
 
 Note: use vscode to code this as the backend part required to use vscode plugin: Thunder Client
@@ -65,4 +65,5 @@ https://67b9561b51192bd378dd2712.mockapi.io/users
 
 
 Authentication:
+https://clerk.com/
 PS C:\react\next.js-15-crash-course> npm install @clerk/nextjs

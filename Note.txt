@@ -4,6 +4,7 @@ https://github.com/gopinav/Next.js-15-Crash-Course/tree/main/nextjs-demo
 https://github.com/Annie-Huang/next.js-15-crash-course
 
 https://jsonplaceholder.typicode.com/users
+https://mockapi.io/
 -------------------------------------------------------------------------------------------
 
 Note: use vscode to code this as the backend part required to use vscode plugin: Thunder Client

@@ -8,15 +8,31 @@ const MockUsers = async () => {
   const users = await res.json();
 
   return (
-    <div className='grid grid-cols-4 gap-4 '>
-      {users.map((user: MockUser) => (
-        <div
-          key={user.id}
-          className='p-4 bg-white shadow-md rounded-lg text-gray-700'
+    <div className='py-10'>
+      <form className='mb-4'>
+        <input
+          type='text'
+          name='name'
+          required
+          className='p-2 mr-2 border border-gray-300 rounded text-gray-700'
+        />
+        <button
+          type='submit'
+          className='bg-blue-500 text-white px-4 py-2 rounded'
         >
-          {user.name}
-        </div>
-      ))}
+          Add User
+        </button>
+      </form>
+      <div className='grid grid-cols-4 gap-4 '>
+        {users.map((user: MockUser) => (
+          <div
+            key={user.id}
+            className='p-4 bg-white shadow-md rounded-lg text-gray-700'
+          >
+            {user.name}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

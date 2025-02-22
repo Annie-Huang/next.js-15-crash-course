@@ -62,3 +62,7 @@ next.js will automatically use these two files while loading the page.tsx in the
 http://localhost:3000/mock-users
 https://mockapi.io/projects/67b9561b51192bd378dd2713
 https://67b9561b51192bd378dd2712.mockapi.io/users
+
+
+Authentication:
+PS C:\react\next.js-15-crash-course> npm install @clerk/nextjs

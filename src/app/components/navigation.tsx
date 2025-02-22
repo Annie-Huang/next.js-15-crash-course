@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { SignInButton, UserButton } from '@clerk/nextjs';
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs';
 
 export const Navigation = () => {
   // check the current path (active path)
@@ -34,8 +34,12 @@ export const Navigation = () => {
       >
         Product 1
       </Link>
-      <SignInButton mode='modal' />
-      <UserButton />
+      <SignedOut>
+        <SignInButton mode='modal' />
+      </SignedOut>
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
     </nav>
   );
 };

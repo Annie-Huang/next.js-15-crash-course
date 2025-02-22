@@ -56,3 +56,6 @@ http://localhost:3000/users-server  <--- see the same set of users in user-clien
 server loading file as to be called 'loading.tsx'
 server error file has to be called 'error.tsx'
 next.js will automatically use these two files while loading the page.tsx in the same directory
+
+
+http://localhost:3000/mock-users

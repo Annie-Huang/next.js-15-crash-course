@@ -1,3 +1,5 @@
+import { revalidatePath } from 'next/cache';
+
 type MockUser = {
   id: number;
   name: string;
@@ -24,6 +26,9 @@ const MockUsers = async () => {
     );
     const newUser = await res.json();
     console.log(newUser);
+
+    // revlidate the path so after we add the user the new name can be seem in http://localhost:3000/mock-users without having to refresh.
+    revalidatePath('/mock-users');
   }
 
   return (

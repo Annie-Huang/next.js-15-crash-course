@@ -1,6 +1,13 @@
-import { clerkMiddleware } from '@clerk/nextjs/server';
+import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
 
-export default clerkMiddleware();
+const isProtectedRoute = createRouteMatcher(['/mock-users(.*)']);
+
+export default clerkMiddleware(async (auth, req) => {
+  // the .protect function will direct user to the sign up page if they are not signed in....
+  // e.g. when you are sign out and go to http://localhost:3000/mock-users, it will direct you to the sign in page.
+  //      after sign in it will direct you back into mock-users page.
+  if (isProtectedRoute(req)) await auth.protect();
+});
 
 export const config = {
   matcher: [

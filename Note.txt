@@ -67,3 +67,7 @@ https://67b9561b51192bd378dd2712.mockapi.io/users
 Authentication:
 https://clerk.com/
 PS C:\react\next.js-15-crash-course> npm install @clerk/nextjs
+
+Middleware for protected route is defined in middleware.ts
+  e.g. when you are sign out and go to http://localhost:3000/mock-users, it will direct you to the sign in page.
+       after sign in it will direct you back into mock-users page.

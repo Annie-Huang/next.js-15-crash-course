@@ -7,9 +7,28 @@ const MockUsers = async () => {
   const res = await fetch('https://67b9561b51192bd378dd2712.mockapi.io/users');
   const users = await res.json();
 
+  // server action:
+  // The 'use server' directive tell nextjs that this should be run on the server side, not client side,
+  async function addUser(formData: FormData) {
+    'use server';
+    const name = formData.get('name');
+    const res = await fetch(
+      'https://67b9561b51192bd378dd2712.mockapi.io/users',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name }),
+      },
+    );
+    const newUser = await res.json();
+    console.log(newUser);
+  }
+
   return (
     <div className='py-10'>
-      <form className='mb-4'>
+      <form action={addUser} className='mb-4'>
         <input
           type='text'
           name='name'

@@ -1,4 +1,5 @@
 import { revalidatePath } from 'next/cache';
+import { auth, currentUser } from '@clerk/nextjs/server';
 
 type MockUser = {
   id: number;
@@ -6,6 +7,13 @@ type MockUser = {
 };
 
 const MockUsers = async () => {
+  // Not sure why we get authObj and userObj as we don't add them into template.
+  const authObj = await auth();
+  const userObj = await currentUser();
+
+  console.log({ authObj });
+  console.log({ userObj });
+
   const res = await fetch('https://67b9561b51192bd378dd2712.mockapi.io/users');
   const users = await res.json();
 
